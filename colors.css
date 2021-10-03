@@ -1,0 +1,51 @@
+.theme-light {
+    --link-color: #0000EE;              /*links*/
+    --visited-color: #551A8B;           /*visited link*/
+    --focus-color: #0000EE;             /*when link was held but let go*/
+    --hover-color: #0000EE;             /*when hovering*/
+    --active-color: #0000EE;            /*when link is held*/
+    --page-background-color: white;     /*background*/
+    --page-foreground-color: black;     /*all text*/
+    --separator-color: #dedede;         /*separating line*/
+    --slider-color: hsl(23, 100%, 50%); /*slider*/
+}
+
+.theme-dark {
+    --link-color: hsl(217, 60%, 51%);             
+    --visited-color: hsl(267, 60%, 45%);        
+    --focus-color: hsl(217, 60%, 51%);              
+    --hover-color: hsl(217, 60%, 51%);              
+    --active-color: hsl(217, 60%, 51%);           
+    --page-background-color: #1C1D1F;
+    --page-foreground-color: #d2dbde;
+    --separator-color: #000000;
+    --slider-color: hsl(232, 20%, 50%);
+}
+
+.theme-dark img{
+	filter: invert(92%) sepia(13%) saturate(187%) hue-rotate(181deg) brightness(98%) contrast(92%);
+}
+
+/*defaults
+.theme-light {
+    --link-color: #1982d2;
+    --page-background-color: white;
+    --page-foreground-color: #2c3e50;
+    --page-secondary-foreground-color: #67727e;
+    --separator-color: #dedede;
+    --slider-color: hsl(23, 100%, 50%);
+}
+
+.theme-dark {
+    --link-color: #1982d2;
+    --page-background-color: #1C1D1F;
+    --page-foreground-color: #d2dbde;
+    --page-secondary-foreground-color: #859399;
+    --separator-color: #000000;
+    --slider-color: hsl(232, 20%, 50%);
+}
+
+.theme-dark img{
+	filter: invert(92%) sepia(13%) saturate(187%) hue-rotate(181deg) brightness(98%) contrast(92%);
+}
+/*

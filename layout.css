@@ -1,0 +1,118 @@
+:root {
+	--spacing-small: 5px;
+    --spacing-medium: 10px;
+    --spacing-large: 16px;
+    --font-family: -BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    --page-font-size: 15.6px;
+    --title-font-size: 22px;
+    --content-line-height: 27px;
+    --content-maxwidth: 900px;
+}
+
+.title {
+	font: 400 14px/28px Roboto,sans-serif;
+	font-size: 200%;
+	font-weight: bold;
+	margin: 10px 2px;
+}
+
+body {
+    font-size: var(--page-font-size);
+    color: var(--page-foreground-color);
+    background-color: var(--page-background-color);  
+}
+
+body, div, p, dl, .title {
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: .9em;
+    font-weight: 600;
+    line-height: initial;
+}
+
+a{
+    text-decoration: none;
+	padding-bottom: 3px;
+}
+
+a:link {
+    color: var(--link-color);
+}
+  
+a:visited {
+    color: var(--visited-color);
+}
+
+  
+a:focus {
+    color: var(--focus-color);
+    border-bottom: 1px solid;
+}
+
+
+a:hover {
+    color: var(--hover-color);
+    border-bottom: 1px solid;
+}
+
+a:active {
+    color:var(--active-color);
+}
+
+p, div, table, dl {
+    font-size: var(--page-font-size);
+}
+
+#titlearea {
+    width: auto;
+    padding: var(--spacing-medium) var(--spacing-large);
+    background: none;
+    border-bottom: none;
+    color: var(--header-foreground);
+}
+
+
+div.header {
+    border-bottom: 1px solid var(--separator-color);
+    background-color: var(--page-background-color);
+  }
+
+div.contents, div.header .title, div.header .summary {
+    max-width: var(--content-maxwidth);
+}
+
+div.contents, div.header .title  {
+    line-height: initial;
+    margin: calc(var(--spacing-medium) + .2em) auto var(--spacing-medium) auto;
+}
+div.header .title {
+    font-weight: 600;
+    font-size: 210%;
+    padding: var(--spacing-medium) var(--spacing-large);
+}
+
+address.footer {
+	font-style: normal;
+	font-size: 38%;
+	text-align: right;
+	padding-right: 12px;
+}
+
+#logo {
+    vertical-align: middle;
+    left: 30%;
+}
+
+#logo img {
+    max-height: calc(var(--title-font-size) * 3);
+    margin-right: var(--spacing-small);
+}
+
+
+.slider_loc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}

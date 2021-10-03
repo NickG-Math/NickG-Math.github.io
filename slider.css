@@ -1,0 +1,65 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 15px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    background-color: var(--slider-color); 
+  }
+
+  input:checked + .slider {
+    background-color: var(--slider-color);
+  } 
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: -1px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    background: var(--page-background-color) url(moon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+  
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(65px);
+    -ms-transform: translateX(65px);
+    transform: translateX(65px);
+    background: var(--page-background-color) url(sun.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
